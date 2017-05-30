@@ -14,4 +14,10 @@
 }
 body {
   font: normal 18px/27px 'PTSansNarrowRegular', Arial, sans-serif;
+  color: #f7f4f1;
+  background-color: #292929;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
