@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'PTSansNarrowRegular';
+  src: url('/fonts/PTSansNarrowRegular/PTSansNarrowRegular.eot');
+  src: url('/fonts/PTSansNarrowRegular/PTSansNarrowRegular.eot#iefix') format('embedded-opentype'), url('/fonts/PTSansNarrowRegular/PTSansNarrowRegular.woff') format('woff'), url('/fonts/PTSansNarrowRegular/PTSansNarrowRegular.ttf') format('truetype'), url('/fonts/PTSansNarrowRegular/PTSansNarrowRegular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSansNarrowBold';
+  src: url('/fonts/PTSansNarrowBold/PTSansNarrowBold.eot');
+  src: url('/fonts/PTSansNarrowBold/PTSansNarrowBold.eot#iefix') format('embedded-opentype'), url('/fonts/PTSansNarrowBold/PTSansNarrowBold.woff') format('woff'), url('/fonts/PTSansNarrowBold/PTSansNarrowBold.ttf') format('truetype'), url('/fonts/PTSansNarrowBold/PTSansNarrowBold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font: normal 18px/27px 'PTSansNarrowRegular', Arial, sans-serif;
+}
