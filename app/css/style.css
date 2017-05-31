@@ -107,3 +107,9 @@ img {
     width: 160px;
   }
 }
+.stats__header {
+  min-height: 130px;
+}
+.stats__items {
+  height: 320px;
+}
