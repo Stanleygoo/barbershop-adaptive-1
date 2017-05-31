@@ -13,6 +13,8 @@
   font-style: normal;
 }
 body {
+  margin: 0;
+  padding: 0;
   font: normal 18px/27px 'PTSansNarrowRegular', Arial, sans-serif;
   color: #f7f4f1;
   background-color: #292929;
@@ -48,4 +50,15 @@ img {
   .page-header__logo {
     height: 648px;
   }
+}
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-nav__items,
+.main-nav__user-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
