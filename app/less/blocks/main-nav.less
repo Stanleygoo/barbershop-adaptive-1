@@ -1,7 +1,8 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  text-align: center;
+  background-color: red;
+  // text-align: center;
 }
 
 .main-nav__items,
@@ -9,4 +10,43 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media @tablet-widths {
+
+  .main-nav {
+    width: auto;
+    min-height: 70px;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    background-color: green;
+    .container();
+    .clearfix();
+  }
+
+  .main-nav__items {
+    float: left;
+    width: 570px;
+    min-height: 70px;
+  }
+
+  .main-nav__user-items {
+    float: right;
+    width: 60px;
+    min-height: 70px
+  }
+
+}
+@media @desktop-widths {
+
+  .main-nav__items {
+    width: 780px;
+  }
+
+  .main-nav__user-items {
+    width: 160px;
+  }
+
 }
