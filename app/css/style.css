@@ -293,3 +293,29 @@ img {
 .news__item:nth-child(2) {
   padding-bottom: 0;
 }
+@media (min-width: 768px) {
+  .news {
+    padding-top: 90px;
+  }
+  .news__wrapper {
+    min-height: 270px;
+    padding: 0;
+  }
+  .news__title {
+    min-height: 40px;
+    margin-right: 200px;
+    margin-bottom: 55px;
+  }
+  .news__items {
+    font-size: 0;
+  }
+  .news__item {
+    display: inline-block;
+    width: 220px;
+    margin: 0;
+    padding: 0 30px;
+    padding-left: 70px;
+    vertical-align: top;
+    font-size: 18px;
+  }
+}
