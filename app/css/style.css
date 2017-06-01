@@ -391,3 +391,32 @@ img {
     background-color: gray;
   }
 }
+.footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-color: red;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .footer__wrapper {
+    width: 640px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__wrapper {
+    width: 960px;
+  }
+}
+.footer__wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.page-footer__contacts {
+  margin-bottom: 25px;
+  background-color: green;
+}
+.page-footer__social {
+  margin-bottom: 25px;
+}
