@@ -319,3 +319,15 @@ img {
     font-size: 18px;
   }
 }
+@media (min-width: 1200px) {
+  .news {
+    padding-top: 88px;
+    padding-bottom: 32px;
+  }
+  .news__title {
+    margin-left: 70px;
+  }
+  .news__item:nth-child(n+3) {
+    display: inline-block;
+  }
+}
