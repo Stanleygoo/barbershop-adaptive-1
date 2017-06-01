@@ -394,7 +394,6 @@ img {
 .footer__wrapper {
   width: 320px;
   margin: 0 auto;
-  background-color: red;
   padding-top: 32px;
   padding-bottom: 24px;
 }
@@ -415,8 +414,29 @@ img {
 }
 .page-footer__contacts {
   margin-bottom: 25px;
-  background-color: green;
 }
 .page-footer__social {
   margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .footer__wrapper {
+    position: relative;
+    padding-top: 52px;
+    padding-bottom: 59px;
+  }
+  .footer__wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .page-footer__contacts {
+    margin-bottom: 50px;
+    margin-right: 180px;
+  }
+  .page-footer__copyright {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 160px;
+  }
 }
