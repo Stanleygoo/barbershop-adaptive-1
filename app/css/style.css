@@ -341,3 +341,22 @@ img {
     display: inline-block;
   }
 }
+.reviews__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 285px;
+  padding-top: 28px;
+  padding-bottom: 50px;
+  background-color: #F8F5F2;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .reviews__wrapper {
+    width: 640px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__wrapper {
+    width: 960px;
+  }
+}
