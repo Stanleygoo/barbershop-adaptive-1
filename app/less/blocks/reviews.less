@@ -15,17 +15,31 @@
 
 .reviews__items {
   margin-bottom: 40px;
+  // background-color: red;
 }
 
 .reviews__item {
   .clearfix();
   margin: 0;
   padding: 0;
-  background-color: green;
+  // background-color: green;
   padding-left: 70px;
   padding-bottom: 28px;
 }
 
 .reviews__item:nth-child(n+2) {
   display: none;
+}
+
+@media @tablet-widths {
+
+  .reviews__title {
+    margin-bottom: 40px;
+  }
+
+  .reviews__items {
+    padding: 0 50px 65px 50px;
+    background-color: gray;
+  }
+
 }
