@@ -271,12 +271,10 @@ img {
   .main-nav__items {
     float: left;
     width: 570px;
-    min-height: 70px;
   }
   .main-nav__user-items {
     float: right;
     width: 60px;
-    min-height: 70px;
   }
   .main-nav__item {
     float: left;
@@ -285,6 +283,18 @@ img {
   }
   .main-nav__item:last-child {
     margin-right: 0;
+  }
+  .main-nav__item--active {
+    position: relative;
+  }
+  .main-nav__item--active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    background-color: #826550;
   }
   .main-nav__item a {
     padding: 0;
@@ -300,7 +310,7 @@ img {
   .main-nav__item a[href]:active {
     color: #ffffff;
     background-color: #000000;
-    opacity: .3;
+    opacity: .2;
   }
   .main-nav__user-login {
     width: 60px;
@@ -313,10 +323,12 @@ img {
     top: 29px;
   }
   .main-nav__user-login:hover::before {
+    background: url("../../img/login-hover.png");
     opacity: 1;
   }
   .main-nav__user-login:active::before {
-    opacity: 0.3;
+    background: url("../../img/login-active.png");
+    opacity: 0.5;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
@@ -333,8 +345,54 @@ img {
   .main-nav__items {
     width: 780px;
   }
+  .main-nav__item {
+    margin-right: 0;
+  }
+  .main-nav__item--active::after {
+    right: 30px;
+    left: 30px;
+  }
+  .main-nav__item a {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+  .main-nav__item a[href]:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .main-nav__item a[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    opacity: 1;
+  }
   .main-nav__user-items {
-    width: 160px;
+    width: auto;
+    max-width: 160px;
+  }
+  .main-nav__user-login {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 25px 30px 23px 50px;
+    font: normal 18px/24px 'PTSansNarrowBold', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .main-nav__user-login:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .main-nav__user-login:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+  }
+  .main-nav__user-login:hover::before {
+    background: url("../../img/login-hover.png");
+    opacity: 1;
+  }
+  .main-nav__user-login:active::before {
+    background: url("../../img/login-hover.png");
+    opacity: 0.4;
   }
 }
 .stats {

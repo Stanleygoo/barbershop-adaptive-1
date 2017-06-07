@@ -131,7 +131,6 @@
     width: 16px;
     height: 16px;
     background: url("../../img/login.png") no-repeat;
-
   }
 }
 
@@ -223,13 +222,11 @@
   .main-nav__items {
     float: left;
     width: 570px;
-    min-height: 70px;
   }
 
   .main-nav__user-items {
     float: right;
     width: 60px;
-    min-height: 70px;
   }
 
   .main-nav__item {
@@ -239,6 +236,20 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 0;
+        height: 3px;
+        background-color: #826550;
+      }
     }
   }
 
@@ -258,7 +269,7 @@
     &:active {
       color: #ffffff;
       background-color: #000000;
-      opacity: .3;
+      opacity: .2;
     }
   }
 
@@ -273,12 +284,12 @@
       top: 29px;
     }
     &:hover::before {
-      // background-position: -10px -46px;
+      background: url("../../img/login-hover.png");
       opacity: 1;
     }
     &:active::before {
-      // background-position: -10px -46px;
-      opacity: 0.3;
+      background: url("../../img/login-active.png");
+      opacity: 0.5;
     }
   }
 
@@ -289,8 +300,65 @@
     width: 780px;
   }
 
+  .main-nav__item {
+      margin-right: 0;
+
+      &--active::after {
+        right: 30px;
+        left: 30px;
+      }
+  }
+
+  .main-nav__item a {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .main-nav__item a[href] {
+    &:hover {
+      color: #000000;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, .3);
+      background-color: #ffffff;
+      opacity: 1;
+    }
+  }
+
   .main-nav__user-items {
-    width: 160px;
+    width: auto;
+    max-width: 160px;
+  }
+
+  .main-nav__user-login {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 25px 30px 23px 50px;
+    font: normal 18px/24px @fontPTSansNarrowBold, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: #000000;
+      background-color: #ffffff;  
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, .3);
+      background-color: #ffffff;
+    }
+
+    &:hover::before {
+      background: url("../../img/login-hover.png");
+      opacity: 1;
+    }
+    &:active::before {
+      background: url("../../img/login-hover.png");
+      opacity: 0.4;
+    }
   }
 
 }
