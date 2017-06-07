@@ -103,9 +103,20 @@
 
   .stats__header {
     .clearfix();
+    position: relative;
     padding: 0;
     padding-top: 31px;
     padding-bottom: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 27px;
+      left: -15px;
+      border: 15px solid transparent;
+      border-bottom-color: #ffffff;
+      transform: rotate(45deg);
+    }
   }
 
   .stats__items {

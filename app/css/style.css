@@ -493,6 +493,7 @@ img {
     margin-top: -184px;
   }
   .stats__header {
+    position: relative;
     padding: 0;
     padding-top: 31px;
     padding-bottom: 24px;
@@ -501,6 +502,17 @@ img {
     content: "";
     display: table;
     clear: both;
+  }
+  .stats__header::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: -15px;
+    border: 15px solid transparent;
+    border-bottom-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .stats__items {
     display: block;
