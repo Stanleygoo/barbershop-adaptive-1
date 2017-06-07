@@ -133,6 +133,28 @@
   }
 }
 
+@media @mobile-widths-only {
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+
+    &--active {
+      display: block;      
+    }
+  }
+
+  .main-nav--closed .main-nav__item--active a {
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: center;
+  }
+
+  .main-nav--closed .main-nav__user-items {
+    display: none;
+  }
+
+}
+
 @media @tablet-widths {
 
   .main-nav {
