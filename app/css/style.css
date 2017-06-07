@@ -265,6 +265,9 @@ img {
     display: table;
     clear: both;
   }
+  .main-nav__toggle {
+    display: none;
+  }
   .main-nav__items {
     float: left;
     width: 570px;
@@ -274,6 +277,46 @@ img {
     float: right;
     width: 60px;
     min-height: 70px;
+  }
+  .main-nav__item {
+    float: left;
+    margin-right: 32px;
+    font: normal 18px/27px 'PTSansNarrowBold', Arial, sans-serif;
+  }
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
+  .main-nav__item a {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    border: none;
+    background: none;
+  }
+  .main-nav__item a[href]:hover {
+    color: #826550;
+    background-color: #000000;
+  }
+  .main-nav__item a[href]:active {
+    color: #ffffff;
+    background-color: #000000;
+    opacity: .3;
+  }
+  .main-nav__user-login {
+    width: 60px;
+    height: 70px;
+    padding: 0;
+    font-size: 0;
+  }
+  .main-nav__user-login::before {
+    left: 12px;
+    top: 29px;
+  }
+  .main-nav__user-login:hover::before {
+    opacity: 1;
+  }
+  .main-nav__user-login:active::before {
+    opacity: 0.3;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
