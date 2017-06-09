@@ -1,5 +1,5 @@
 .stats {
-  .container();
+  .container-fluid();
 }
 .stats__header {
   min-height: 130px;
@@ -102,10 +102,11 @@
   }
 
   .stats__header {
-    .clearfix();
     position: relative;
-    padding: 0;
-    padding-top: 31px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 31px 40px;
     padding-bottom: 24px;
 
     &::before {
@@ -120,11 +121,11 @@
   }
 
   .stats__slogan {
-    float: left;
-    width: 255px;
+    // float: left;
+    width: 50%;
+    padding: 0;
     margin-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 25px;
+    // padding-left: 40px;
     font-size: 40px;
     line-height: 40px;
     text-align: left;
@@ -132,20 +133,20 @@
   }
 
   .stats__intro {
-    float: right;
-    width: 210px;
+    // float: right;
+    width: 38%;
     padding: 0;
     padding-top: 4px;
-    padding-right: 80px;
+    padding-left: 30px;
     text-align: left;
   }
 
   .stats__legend--top {
+    // float: left;
+    // clear: left;
+    // padding-left: 40px;
     display: block;
-    float: left;
-    clear: left;
-    width: 280px;
-    padding-left: 40px;
+    width: 50%;
     color: rgba(0, 0, 0, .3);
   }
 
@@ -154,14 +155,22 @@
   }
 
   .stats__items {
-    .clearfix();
+    // .clearfix();
     display: block;
+  }
+  .stats__items tbody {
+      display: flex;
+      flex-wrap: wrap;
   }
 
   .stats__items tr {
     display: block;
-    float: left;
-    width: 250px;
+    // float: left;
+    // width: 250px;
+    // flex-basis: 250px;
+    // flex-grow: 1;
+    box-sizing: border-box;
+    width: 50%;
     padding: 25px 35px;
     padding-bottom: 28px;;
   }
@@ -194,12 +203,14 @@
 @media @desktop-widths {
 
   .stats {
-    .clearfix();
+    // .clearfix();
+    display: flex;
     margin-top: -159px;
   }
 
   .stats__header {
-    float: left;
+    // float: left;
+    flex-direction: column;
     width: 240px;
     min-height: 263px;
     padding-left: 40px;
@@ -213,7 +224,7 @@
   .stats__slogan {
     float: none;
     width: auto;
-    margin-bottom: 42px;
+    // margin-bottom: 42px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -228,14 +239,15 @@
   }
 
   .stats__legend--top {
-    float: none;
+    // float: none;
     width: auto;
-    padding-left: 0;
+    margin-top: auto;
+    // padding-left: 0;
   }
 
   .stats__items {
-    float: right;
-    display: block;
+    // float: right;
+    display: flex;
     width: 640px;
   }
 
