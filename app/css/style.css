@@ -43,23 +43,28 @@ img {
 }
 @media (min-width: 768px) {
   .page-header {
-    position: relative;
-    min-height: 70px;
-    padding-bottom: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #000000;
   }
   .page-header__logo {
-    position: absolute;
-    bottom: 0;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
     width: 100%;
     height: 400px;
     background: #000000 url("../../img/bg-header.jpg") no-repeat center -9px;
   }
 }
 @media (min-width: 1200px) {
-  .page-header {
-    padding-bottom: 648px;
-  }
   .page-header__logo {
     height: 648px;
     background-position: center 0;
