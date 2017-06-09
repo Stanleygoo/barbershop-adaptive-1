@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  width: 320px;
+  width: auto;
   min-height: 50px;
   margin: 0 auto;
   background-color: #826550;
@@ -210,9 +210,10 @@
     background-color: #000000;
   }
 
-  .main-nav__wrapper {
-    .clearfix();
-    .container();
+  .main-nav__wrapper {    
+    .container-fluid();
+    display: flex;
+    justify-content: space-between;
   }
 
   .main-nav__toggle {
@@ -220,17 +221,17 @@
   }
 
   .main-nav__items {
-    float: left;
-    width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
   }
 
   .main-nav__user-items {
-    float: right;
     width: 60px;
   }
 
   .main-nav__item {
-    float: left;
     margin-right: 32px;
     font: normal 18px/27px @fontPTSansNarrowBold, Arial, sans-serif;
 
@@ -296,10 +297,6 @@
 }
 @media @desktop-widths {
 
-  .main-nav__items {
-    width: 780px;
-  }
-
   .main-nav__item {
       margin-right: 0;
 
@@ -343,7 +340,7 @@
 
     &:hover {
       color: #000000;
-      background-color: #ffffff;  
+      background-color: #ffffff;
     }
 
     &:active {
