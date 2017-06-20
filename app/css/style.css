@@ -64,6 +64,13 @@ img {
     background: #000000 url("../../img/bg-header.jpg") no-repeat center -9px;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .page-header__logo {
+    background-image: url("../../img/bg-header-2х.jpg");
+    -webkit-background-size: 1200px auto;
+            background-size: 1200px auto;
+  }
+}
 @media (min-width: 1200px) {
   .page-header__logo {
     height: 648px;
