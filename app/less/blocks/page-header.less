@@ -11,7 +11,7 @@
 @media @tablet-widths {
 
   .page-header {
-    // position: relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     // min-height: 70px;
@@ -31,6 +31,16 @@
       background-image: url("../../img/bg-header-2х.jpg");
       background-size: 1200px auto;
     }
+  }
+
+  .page-header__logo img {
+    position: absolute;
+    bottom: 250px;
+    left: 50%;
+    width: 370px;
+    height: auto;
+    // margin-left: -185px;
+    transform: translateX(-50%);
   }
 
 }

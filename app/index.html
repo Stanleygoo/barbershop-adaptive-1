@@ -9,7 +9,11 @@
   <header class="page-header">
     <h1 class="visually-hidden">Барбершоп &laquo;Бородинский&raquo; - истинно мужская классика</h1>
     <div class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="370" height="153" alt="Барбершоп &ldquo;Бородинский&rdquo;">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Барбершоп &ldquo;Бородинский&rdquo;">
+      </picture>
     </div>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
